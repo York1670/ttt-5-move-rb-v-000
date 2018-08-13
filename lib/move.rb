@@ -1,5 +1,5 @@
 board = [" "," "," "," "," "," "," "," "," ",]
-
+value = ["X","O"]
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -13,7 +13,7 @@ def input_to_index(user_input)
 end
 
 def move(board, input_to_index, value = "X")
-  board[input_to_index] = value
+  board[input_to_index] = "value#{value}"
 end
 
 def update_array_at_with(board, input_to_index, value = "X")
