@@ -16,5 +16,9 @@ def display_board(board)
 end
 
 puts "Where would you like to go?"
+
 user_input = gets.strip
+
 input_to_index(user_input)
+
+puts update_array_at_with(board, input_to_index, value = "X")
